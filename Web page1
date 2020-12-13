@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>hw1</title>
+     <link rel="stylesheet" href="hw1.css">
+     <style>
+h1{
+  color:blue;
+}
+p{
+  color:black;
+}
+</style>
+</head>
+<body style="background-color:white;">
+     <header>
+     <h1>WELLNESS ANALYSING SYSTEM</h1>
+
+
+     <figure>
+     <BR/>
+
+     <img src="heartbeart.jpg" alt="heartbeat" width="128" height="128">
+
+     <BR/>
+    
+    
+    </figure> 
+       
+
+    <p id="demo"></p>
+
+<a class="button"
+onclick='document.getElementById("demo").innerHTML="A normal resting heart rate for adults ranges from 60 to 100 beats per minute. Generally, a lower heart rate at rest implies more efficient heart function and better cardiovascular fitness. For example, a well-trained athlete might have a normal resting heart rate closer to 40 beats per minute. "'>Normal Heart Beat Rate</a>
+
+   <p id="new"></p>
+
+   <a class="button"
+onclick='document.getElementById("new").innerHTML="The average normal body temperature is generally accepted as 98.6°F (37°C). Some studies have shown that the normal body temperature can have a wide range, from 97°F (36.1°C) to 99°F (37.2°C). A temperature over 100.4°F (38°C) most often means you have a fever caused by an infection or illness."'>Normal Temperature Range</a>
+
+
+  <p id="nive"></p>
+  
+  <a class="button"
+  onclick='document.getElementById("nive").innerHTML="As a general guide: ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be 90/60mmHg or lower."'>Normal Blood pressure Range </a> 
+  <h2>Heartattack</h2>
+
+  <p>A heart attack occurs when an artery supplying your heart with blood and oxygen becomes blocked. Fatty deposits build up over time, forming plaques in your heart's arteries. If a plaque ruptures, a blood clot can form and block your arteries, causing a heart attack.</p>
+
+  <button type="button"
+onclick="myFunction()">Symptons</button>
+
+
+<p id="demo1"></p>
+
+<script>
+function myFunction(){
+  document.getElementById("demo1").innerHTML="Common heart attack signs and symptoms include:<br>Pressure, tightness, pain, or a squeezing or aching sensation in your chest or arms that may spread to your neck, jaw or back,Nausea, indigestion, heartburn or abdominal pain,Shortness of breathCold sweat,Fatigue,Lightheadedness or sudden dizziness";
+  
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>   
