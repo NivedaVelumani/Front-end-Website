@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+   <title>Shippind and Billing></title>
+   <style>
+     input{
+     	border:1px solid black;
+
+     }
+     input:focus{
+     	background-color: #E6E6E6;
+          }
+   fieldset{
+   	margin-bottom: 4%;
+
+   }
+   </style>
+   <script type="text/javascript">
+   
+     function billingFunction(){
+     	var checked=document.getElementById("same").checked;
+
+     	document.getElementById("bilingName").value=checked?
+     	                       document.getElementById("shippingName").value :"";
+     	document.getElementById("bilingZip").value=checked?
+     	                       document.getElementById("shippingZip").value :"";                       
+     }       
+   </script>
+   
+   <link rel="stylesheet" types="text/css" href="CSSfile.css">
+   
+ </head>
+ <body>
+   <!-- THIS IS SHIPPING AND BILLING FORM-->
+   
+   <img src="flipkart.jpg" alt="Flipkart" width="100% "; height="63px";<br>
+   <h1 id="h">Shipping and Billing Form </h1>
+   <p id="par">Add the javascript code needed to enable the auto-complete on this form.Whenever the checkbox is checked ,the code should automaticlly copy the values of shipping name and shiiping bill into thebilling address amd billing zip. </p>
+
+   <form id="fm">
+   <fieldset>
+      <legend>Shipping information</legend> <br><br>
+      <label for="shippingName">"Name:</label>
+              <input type="text" name="Name" id="shippingName"  required><br><br>
+              
+      <label for="shippingzip"> Zip code:</label>
+       <input type="text" name="zip" id="shippingZip" pattern="[0-9]{5}">required> <br><br>
+
+       <label for="male">Male</label>
+         <input type="radio" id="male" name="gender" value="male">
+       <label for="female">Female</label>
+         <input type="radio" id="female" name="gender" value="female"> <br><br>
+
+       <label for="birthday">Birthday</label>
+         <input type="date" id="birthday" name="birthday"><br><br>
+
+       <label for="quantity">Total quantity:</label>
+         <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+         
+       <label for="phone">Enter your phone number:</label>
+        <input type="tel"id="phone" name="phone" pattern="[0-9]{3}-{0-9]{3}"><br><br>
+        
+       <label for="email">Enter your email:</label>
+         <input type="email" id="email" name="email"> <br><br>
+       <label for="India"> I am from India</label>
+         <input type="checkbox" id="Country" name="Country" value="India">
+       <label for="other"> other country </label>
+         <input typr="checkbox" id="othercountry" name="othercountry" value="other"><br><br>
+           
+    </fieldset>
+        <input type="checkbox" id="same" name="same" onchange="bilingFunction()">
+         <label for="same">Is the billing information is same?</label>  
+         
+   <fieldset>
+        <legend>Billing INformation</legend>
+        <label for="billingName">Name:</label>
+        <input type"text" name="Name" id="billingName" required><br><br>
+        
+        <label for="billingzip"> Zip code:</label>
+        <input type="text" name="zip" id="billingZip" pattern="[0.9]{5}"required><br><br>
+    </fieldset>
+    
+    <input type="submit" value="Verify">
+    </form>
+  </body>
+               
+ </html>          
+           
